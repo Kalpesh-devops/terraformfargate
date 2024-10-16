@@ -11,7 +11,7 @@ resource "aws_ecs_task_definition" "pythonpro" {
       [
      {
         "name": "python-project-container",
-        "image": "${aws_ecr_repository.ecr.repository_url}:8",
+        "image": "${aws_ecr_repository.ecr.repository_url}:1",
         "cpu": 1024,
         "memory": 2048,
         "essential": true,
